@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Currency Converter</title>
+  </head>
+
+  <body>
+    <div class="navigation-bar">
+      <div class="navigation-items">
+        <img src="./Asset1@3x1.svg" alt="site-logo" />
+        <div class="menu">
+          <span class="menu-item">БАНК</span>
+          <span class="menu-item">БИЗНЕС</span>
+          <span class="menu-item">ИНВЕСТИЦИИ</span>
+          <span class="menu-item">СТРАХОВАНИЕ</span>
+          <span class="menu-item">МОБАЙЛ</span>
+          <span class="menu-item">ПУТЕШЕСТВИЯ</span>
+          <span class="menu-item">РАЗВЛЕЧЕНИЯ</span>
+        </div>
+        <button class="login">ВОЙТИ</button>
+      </div>
+    </div>
+    <div class="main">
+      <h1>Конвертер валют онлайн</h1>
+      <div class="conversion-part">
+        <div class="left">
+          <label for="amountL" class="txt">У меня есть</label>
+          <div class="btns btns-left">
+            <button class="btn selected">RUB</button>
+            <button class="btn">USD</button>
+            <button class="btn">EUR</button>
+            <button class="btn">GBP</button>
+          </div>
+          <div class="input-div input-left">
+            <input id="amountL" type="number"/>
+            <p class="current-currency current-currency-left">
+              When connected to the Internet, the exchange rate will appear here
+            </p>
+          </div>
+        </div>
+        <div class="right">
+          <label for="amountR" class="txt">Хочу приобрести</label>
+          <div class="btns btns-right">
+            <button class="btn">RUB</button>
+            <button class="btn selected">USD</button>
+            <button class="btn">EUR</button>
+            <button class="btn">GBP</button>
+          </div>
+          <div class="input-div input-right">
+            <input id="amountR" type="number" />
+            <p class="current-currency current-currency-right">
+              When connected to the Internet, the exchange rate will appear here
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
